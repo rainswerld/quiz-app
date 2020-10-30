@@ -1,14 +1,20 @@
 import React from 'react'
-import quiz from '../data/Apprentice_TandemFor400_Data.json'
-import { Card, ListGroup } from 'react-bootstrap'
+// import quiz from '../data/Apprentice_TandemFor400_Data.json'
+import { Card } from 'react-bootstrap'
 
 function QuestionCard() {
   return (
-    <Card>
-      <Card.Title>map each question here</Card.Title>
-      <ListGroup>
-        <ListGroup.Item>map each answer here</ListGroup.Item>
-      </ListGroup>
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the bulk of
+          the card's content.
+        </Card.Text>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
     </Card>
   )
 }
